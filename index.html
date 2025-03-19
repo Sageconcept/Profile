@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="./technical-skills.html">Technical Skills</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="profile-card">
+            <div class="profile-container">
+                <div class="profile-image">
+                    <img src="/assets/images/Photoroom-20250222_103205.png" alt="Profile Image">
+                </div>
+                <div class="profile-details">
+                    <h1>Akwai Kwaji Iliya</h1>
+                    <p class="location">Nigeria, Adamawa</p>
+                    <p class="description">Front-end Developer | Photographer | Graphic Designer</p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Sageconcept" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://x.com/asage205" target="_blank" class="social-link">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <a href="https://www.instagram.com/a.sage205/" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.tiktok.com/@a.sage205" target="_blank" class="social-link">
+                    <i class="fab fa-tiktok"></i> TikTok
+                </a>
+                <a href="https://www.facebook.com/akwai.iliya" target="_blank" class="social-link">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I am a multi-talented creative and tech enthusiast specializing in front-end development, photography, and graphic design. With a strong foundation in modern web technologies and an artistic eye for visuals, I bring a unique blend of functionality and aesthetics to every project.</p>
+                <div class="about-grid">
+                    <div class="about-item">
+                        <i class="fas fa-code"></i>
+                        <h3>Development</h3>
+                        <p>Crafting clean, efficient code and building responsive web applications that deliver exceptional user experiences.</p>
+                    </div>
+                    <div class="about-item">
+                        <i class="fas fa-camera"></i>
+                        <h3>Photography</h3>
+                        <p>Capturing moments and telling stories through compelling visual imagery and creative composition.</p>
+                    </div>
+                    <div class="about-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Design</h3>
+                        <p>Creating visually stunning designs that combine aesthetics with functionality for maximum impact.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">Client Reviews</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://via.placeholder.com/50" alt="Client 1" class="review-avatar">
+                        <div class="review-info">
+                            <h3>John Doe</h3>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Exceptional work! The attention to detail and creativity brought to my project was outstanding. Highly recommended!"</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://via.placeholder.com/50" alt="Client 2" class="review-avatar">
+                        <div class="review-info">
+                            <h3>Jane Smith</h3>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Amazing photographer and developer! Captured exactly what I was looking for and delivered beyond expectations."</p>
+                </div>
+            </div>
+            <div class="review-form">
+                <h3>Leave a Review</h3>
+                <form id="reviewForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1"><i class="fas fa-star"></i></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="review" name="review" placeholder="Your Review" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Review</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="contactName" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <div class="contact-grid">
+                    <a href="akwaiiliya205@gmail.com" class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>your.email@example.com</p>
+                    </a>
+                    <a href="https://wa.me/2349018884382" target="_blank" class="contact-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <h3>WhatsApp</h3>
+                        <p>+234-901-888-4382</p>
+                    </a>
+                    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p>Connect with me</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="https://wa.me/2349018884382" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://github.com/Sageconcept" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/asage205" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/a.sage205/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@a.sage205" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/akwai.iliya" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+                <p>&copy; 2023 A.sage. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

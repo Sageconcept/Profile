@@ -1,5 +1,6 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+  "redirects": [
+    { "source": "/blog", "destination": "/blog.html", "statusCode": 301 },
+    { "source": "/services", "destination": "/services.html", "statusCode": 301 }
   ]
 }
